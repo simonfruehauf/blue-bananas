@@ -1,0 +1,22 @@
+:root {
+    --main: #4D4D4D;
+    --secondary: #B46060;
+    --accent-1: #FFBF9B;
+    --accent-2: #FFF4E0;
+
+    --main: #867070;
+    --secondary: #D5B4B4;
+    --accent-1: #E4D0D0;
+    --accent-2: #F5EBEB;
+
+    --main: #BBD6B8;
+    --secondary: #AEC2B6;
+    --accent-1: #94AF9F;
+    --accent-2: #DBE4C6;
+
+
+    --main-font: 'Courier New', Courier, monospace ;
+
+    --shadow: .3rem .3rem .6rem var(--accent-1), -.2rem -.2rem .5rem var(--accent-2);
+    --inner-shadow: inset .2rem .2rem .5rem var(--accent-1), inset -.2rem -.2rem .5rem var(--accent-2);
+}

@@ -1,0 +1,79 @@
+/* Body */
+* {
+    font-family: var(--main-font);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+
+}
+
+/* Style the buttons */
+.tab-buttons {
+    width: 100%;
+    background-color: var(--accent-1);
+}
+
+.tab-button {
+    border: none;
+    margin-left: 1em;
+    outline: none;
+    padding: 10px 16px;
+    background-color: var(--secondary);
+    cursor: pointer;
+    border-radius: 1em 1em 0 0;
+    transition: background-color 0.5s, border-radius 0.5;
+}
+
+#setting {
+    float: right;
+    margin-right: 1em;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+
+.tab-button:hover {
+    background-color: var(--main);
+    color: var(--accent-1);
+    border-radius: 1em 1em 0 0;
+    transition: background-color 0.5s, border-radius 0.5s;
+}
+
+.tabactive {
+    background-color: var(--main);
+    color: var(--accent-1);
+    border-radius: 0 0 0 0;
+    transition: border-radius 0.5s;
+}
+
+/* Show & hide tabs*/
+.tab-content {
+    display: none;
+    margin-left: 1em;
+    height: 100%;
+}
+
+.shown {
+    display: inherit;
+}
+
+/* The main content */
+.main {
+    width: 70%;
+    float: left;
+}
+
+/* The sidebar */
+.sidebar {
+
+    width: 30%;
+    float: right;
+    background-color: var(--accent-2);
+    height: 100vh;
+}
+
+.sidebar-content {
+    margin-left: 1em;
+}
