@@ -14,6 +14,7 @@
     --accent-1: #94AF9F;
     --accent-2: #DBE4C6;
 
+    --tooltip-border: 2px solid var(--accent-2);
 
     --main-font: 'Courier New', Courier, monospace ;
 

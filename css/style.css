@@ -1,8 +1,14 @@
 /* Body */
-* {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
     font-family: var(--main-font);
 }
 
+html{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -76,4 +82,26 @@ body {
 
 .sidebar-content {
     margin-left: 1em;
+}
+
+/* Perks */
+.perk {
+	background-color: var(--accent-1);
+	border-radius: 100%;
+	cursor: pointer;
+	display: inline-block;
+	height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+    border: var(--tooltip-border)
+
+}
+.locked{
+    background-color: var(--accent-2);
 }

@@ -1,0 +1,40 @@
+.hastooltip{
+    position: relative;
+
+}
+.tooltip{
+    visibility: hidden;
+
+
+    width: 13em;
+    height: auto;
+    word-wrap: break-word;
+    z-index: 2;
+    padding: 1em;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    transform: translateY(-50%);
+    background-color: var(--secondary);
+    box-shadow: var(--shadow);
+    border: var(--tooltip-border)
+}
+.tooltip > p{
+    font-size: 13px;
+}
+.tooltip-req{
+    font-style: italic;
+}
+
+
+/*direct child*/
+*:hover > .tooltip{
+    visibility: visible;
+}
+
+.locked:hover > .tooltip{
+    visibility: hidden;
+
+}
