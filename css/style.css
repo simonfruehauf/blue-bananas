@@ -105,3 +105,26 @@ body {
 .locked{
     background-color: var(--accent-2);
 }
+
+/* Icons */
+.icon-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.locked img{
+    display: none;
+}
+.icon-wrapper > img{
+    width: 100%;
+    height: 80%;
+}
+
+
+.perkrow{
+    display: flex;
+    align-items: center;
+}

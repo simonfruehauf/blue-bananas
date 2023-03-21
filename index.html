@@ -7,8 +7,9 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/var.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/test.css">
     <link rel="stylesheet" type="text/css" href="css/tooltips.css">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+
 </head>
 
 <body>
@@ -18,22 +19,20 @@
             <button type="button" class="tab-button" id="tab2">Skills</button>
             <button type="button" class="tab-button" id="tab3">Perks</button>
             <button type="button" class="tab-button" id="tab4">????</button>
-
-
             <button type="button" class="tab-button" id="setting">settings</button>
         </div>
         <div class="tabs">
             <div class="tab-content shown" id="tab1-content">
                 <h1>Magic</h1>
-                <h2>Category 1 </h2>
-
-                <div>
-                    <div class="perk hastooltip locked" id="perk1">
-                        <svg>
-                            <path class="ic ic-fire"/>
-                        </svg>
+                <h2>Category 1</h2>
+                <div class="perkrow">
+                    <div class="perk hastooltip" id="perk1">
+                        <div class="icon-wrapper">
+                            <img class="icon" src="icons/perk1.png">
+                        </div> 
                     </div>
                     <div class="perk hastooltip locked" id="perk2">
+
                     </div>
                     <div class="perk hastooltip locked" id="perk3">
                     </div>
@@ -75,6 +74,7 @@
     <script src="js/tabs.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tooltips.js"></script>
+
 </footer>
 
 </html>
