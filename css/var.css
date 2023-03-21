@@ -1,18 +1,36 @@
 :root {
-    --main: #4D4D4D;
-    --secondary: #B46060;
-    --accent-1: #FFBF9B;
-    --accent-2: #FFF4E0;
+    --theme1-main: #BBD6B8;
+    --theme1-secondary: #AEC2B6;
+    --theme1-accent-1: #94AF9F;
+    --theme1-accent-2: #DBE4C6;
+    --theme1-font-color: black;
 
-    --main: #867070;
-    --secondary: #D5B4B4;
-    --accent-1: #E4D0D0;
-    --accent-2: #F5EBEB;
+
+
+    --theme2-main: #4D4D4D;
+    --theme2-secondary: #B46060;
+    --theme2-accent-1: #FFBF9B;
+    --theme2-accent-2: #FFF4E0;
+    --theme2-font-color: black;
+
+    
+    --theme3-main: #867070;
+    --theme3-secondary: #D5B4B4;
+    --theme3-accent-1: #E4D0D0;
+    --theme3-accent-2: #F5EBEB;
+    --theme3-font-color: black;
+    
+    --theme4-main: #245953;
+    --theme4-secondary: #408E91;
+    --theme4-accent-1: #E49393;
+    --theme4-accent-2: #D8D8D8;
+    --theme4-font-color: black;
 
     --main: #BBD6B8;
     --secondary: #AEC2B6;
     --accent-1: #94AF9F;
     --accent-2: #DBE4C6;
+    --font-color: black;
 
     --tooltip-border: 2px solid var(--accent-2);
 
@@ -20,4 +38,7 @@
 
     --shadow: .3rem .3rem .6rem var(--accent-1), -.2rem -.2rem .5rem var(--accent-2);
     --inner-shadow: inset .2rem .2rem .5rem var(--accent-1), inset -.2rem -.2rem .5rem var(--accent-2);
+
+
+
 }

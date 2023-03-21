@@ -1,11 +1,11 @@
 var tabs = document.getElementsByClassName("tab-content");
 
-var elements = document.getElementsByClassName("tab-button");
+var tabbuttons = document.getElementsByClassName("tab-button");
 
 // add onclick event to all tabs
-for (let i = 0; i < elements.length; i++) {
-    elements[i].onclick = function(event) {
-        openTab(event, elements[i].id);
+for (let i = 0; i < tabbuttons.length; i++) {
+    tabbuttons[i].onclick = function(event) {
+        openTab(event, tabbuttons[i].id);
     }
 }
 
