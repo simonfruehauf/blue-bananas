@@ -24,6 +24,11 @@
         <div class="tabs">
             <div class="tab-content shown" id="tab1-content">
                 <h1>Magic</h1>
+                <div class="progressbar">
+                    <progress id="mana" value="50" max="100"></progress>
+                    <span id="mana-label" class="label label-left">12/100</span>
+                    <span class="label label-right">mana</span>
+                </div>
 
             </div>
             <div class="tab-content" id="tab2-content">
@@ -92,6 +97,7 @@
 </body>
 <footer>
 
+    <script src="js/utils.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tooltips.js"></script>

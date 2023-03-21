@@ -5,8 +5,6 @@
     --theme1-accent-2: #DBE4C6;
     --theme1-font-color: black;
 
-
-
     --theme2-main: #4D4D4D;
     --theme2-secondary: #B46060;
     --theme2-accent-1: #FFBF9B;
@@ -40,5 +38,7 @@
     --inner-shadow: inset .2rem .2rem .5rem var(--accent-1), inset -.2rem -.2rem .5rem var(--accent-2);
 
 
-
+    --mana: #19A7CE;
+    --health:#EA5455;
+    --stamina: #F7C04A;
 }
