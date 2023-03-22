@@ -16,8 +16,6 @@ const getColorPreference = () => {
         return "1"
 }
 
-console.log(getColorPreference());
-
 for (var i = 0; i < radios.length; i++) {
     if (radios[i].value == getColorPreference()) {
         radios[i].checked = true;

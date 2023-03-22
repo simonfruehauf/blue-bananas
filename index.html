@@ -26,13 +26,15 @@
                 <h1>Magic</h1>
                 <h2>Action</h2>
                 <div class="row">
-                    <button type="button" class="clickbutton actionbutton hastooltip" id="action1">Do Thing</button>
+                    <button type="button" class="action clickbutton hastooltip" id="action1">Do Thing</button>
+                    <button type="button" class="action clickbutton hastooltip" id="action2">Do Thing</button>
+                    <button type="button" class="action clickbutton hastooltip" id="action3">Do Thing</button>
                 </div>
                 <h2>Task</h2>
                 <div class="row">
-                    <button type="button" class="clickbutton taskbutton hastooltip" id="action1">Do Thing</button>
-                    <button type="button" class="clickbutton taskbutton hastooltip" id="action1">Do Thing</button>
-                    <button type="button" class="clickbutton taskbutton hastooltip" id="action1">Do Thing</button>
+                    <button type="button" class="task clickbutton hastooltip currenttask" id="task1">Do Thing</button>
+                    <button type="button" class="task clickbutton hastooltip" id="task2">Do Thing</button>
+                    <button type="button" class="task clickbutton hastooltip" id="task3">Do Thing</button>
                 </div>
             </div>
             <div class="tab-content" id="tab2-content">
@@ -68,22 +70,33 @@
             <div class="tab-content" id="setting-content">
 
                 <h1>Settings</h1>
+                <h2>Saving</h2>
+                <h3></h3>
+                <form class="row">
+                    <label class="radio-container hastooltip" id="autosavetooltip">
+                        <input id="autosavebox" type="checkbox" name="autosave" value="1" />
+                        <span>Autosave</span> 
+                    </label>
+
+                    <button type="button" class="clickbutton" id="savebutton">Do Thing</button>
+
+                </form>
 
                 <h2>Theme</h2>
                 <form class="row">
-                    <label class="theme-container">
+                    <label class="radio-container">
                         <input class="theme-button" type="radio" name="theme" value="1" />
                         <span>Jungle</span>
                     </label>
-                    <label class="theme-container">
+                    <label class="radio-container">
                         <input class="theme-button" type="radio" name="theme" value="2" />
                         <span>Volcano</span>
                     </label>
-                    <label class="theme-container">
+                    <label class="radio-container">
                         <input class="theme-button" type="radio" name="theme" value="3" />
                         <span>Rosé</span>
                     </label>
-                    <label class="theme-container">
+                    <label class="radio-container">
                         <input class="theme-button" type="radio" name="theme" value="4" />
                         <span>Other</span>
                     </label>
@@ -111,6 +124,9 @@
     <script src="js/main.js"></script>
     <script src="js/tooltips.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/buttons.js"></script>
+
+    <script src="js/savegame.js"></script>
 
 </footer>
 

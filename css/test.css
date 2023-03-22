@@ -2,12 +2,31 @@
     border-radius: 0.5em;
     padding: 0.8em 1.7em 0.8em 1.7em;
     margin: 0 5px;
+    transition: all 0.2s;
+
 }
 
-.actionbutton{
+.task:hover {
+    transition: all 0.2s;
+}
+
+.action:active {
+    box-shadow: var(--inner-shadow);
+    transition: all 0.2s;
+    
+}
+.action{
     background-color: var(--accent-1);
 }
 
-.taskbutton{
+.task{
     background-color: var(--accent-2);
 }
+
+.task.currenttask{
+    background-color: var(--secondary);
+}
+
+
+
+/**/

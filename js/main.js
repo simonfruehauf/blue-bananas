@@ -10,7 +10,6 @@ function unlockPerk(id){
 
 }
 
-
 // setting progress bars
 
 function setBar(id, val){
@@ -20,12 +19,11 @@ function setBar(id, val){
     label.innerHTML =  bar.value + "/" + bar.max;
 
 }
+
+
 //testing
 
-
-
 let test = setInterval(function() {
-    
+
     setBar("mana", Math.round((Math.random()*100)-50));
-    
   }, 1000);

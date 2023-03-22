@@ -1,7 +1,16 @@
 {
     "action1": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Description</p><hr><b>Result<b></p></div>",
+    "action2": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Description</p><hr><b>Result<b></p></div>",
+    "action3": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Description</p><hr><b>Result<b></p></div>",
+
+    "task1": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Description</p><hr><b>Result<b></p></div>",
+    "task2": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Description</p><hr><b>Result<b></p></div>",
+    "task3": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Description</p><hr><b>Result<b></p></div>",
+ 
     "perk1": "<div class=\"tooltip\"><h3>Firestarter</h3><p class=\"tooltip-req\">Dealt 10.000 damage with fire.</p><hr><b>+100 pyrokinesis<b></p></div>",
     "perk2": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Requirement</p><hr><b>Buff<b></p></div>",
     "perk3": "",
-    "perk4": ""
+    "perk4": "",
+
+    "autosavetooltip": "<div class=\"tooltip\"><p class=\"tooltip-req\">Saves the game every 60 seconds.</p></div>"
 }

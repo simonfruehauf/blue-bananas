@@ -1,14 +1,13 @@
 .hastooltip{
-    position: relative;
-
+    position: relative !important; 
 }
+
 .tooltip{
     visibility: hidden;
-
     width: 13em;
     height: auto;
     word-wrap: break-word;
-    z-index: 2;
+    z-index: 1;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.1em;
@@ -45,10 +44,8 @@
     visibility: visible;
     transition: box-shadow 0.1s;
     box-shadow: var(--shadow);
-
 }
 
 .locked:hover > .tooltip{
     visibility: hidden;
-
 }
