@@ -34,7 +34,7 @@
 
     --main-font: 'Courier New', Courier, monospace ;
 
-    --shadow: .3rem .3rem .6rem var(--accent-1), -.2rem -.2rem .5rem var(--accent-2);
+    --shadow: .2rem .2rem 1rem var(--accent-1), -.2rem -.2rem 1rem var(--accent-2);
     --inner-shadow: inset .2rem .2rem .5rem var(--accent-1), inset -.2rem -.2rem .5rem var(--accent-2);
 
 

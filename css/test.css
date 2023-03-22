@@ -1,0 +1,13 @@
+.clickbutton {
+    border-radius: 0.5em;
+    padding: 0.8em 1.7em 0.8em 1.7em;
+    margin: 0 5px;
+}
+
+.actionbutton{
+    background-color: var(--accent-1);
+}
+
+.taskbutton{
+    background-color: var(--accent-2);
+}

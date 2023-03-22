@@ -1,7 +1,7 @@
 {
-    "actionbutton": "",
-    "perk1": "<div class=\"tooltip\"><h3>Firestarter</h3><p class=\"tooltip-req\">Dealt 10.000 damage with fire.</p><p>You have a natural affinity for fire and can control it with ease. <br><br> <b>+100 pyrokinesis<b></p></div>",
-    "perk2": "",
+    "action1": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Description</p><hr><b>Result<b></p></div>",
+    "perk1": "<div class=\"tooltip\"><h3>Firestarter</h3><p class=\"tooltip-req\">Dealt 10.000 damage with fire.</p><hr><b>+100 pyrokinesis<b></p></div>",
+    "perk2": "<div class=\"tooltip\"><h3>Title</h3><p class=\"tooltip-req\">Requirement</p><hr><b>Buff<b></p></div>",
     "perk3": "",
     "perk4": ""
 }

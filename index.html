@@ -24,12 +24,16 @@
         <div class="tabs">
             <div class="tab-content shown" id="tab1-content">
                 <h1>Magic</h1>
-                <div class="progressbar">
-                    <progress id="mana" value="50" max="100"></progress>
-                    <span id="mana-label" class="label label-left">12/100</span>
-                    <span class="label label-right">mana</span>
+                <h2>Action</h2>
+                <div class="row">
+                    <button type="button" class="clickbutton actionbutton hastooltip" id="action1">Do Thing</button>
                 </div>
-
+                <h2>Task</h2>
+                <div class="row">
+                    <button type="button" class="clickbutton taskbutton hastooltip" id="action1">Do Thing</button>
+                    <button type="button" class="clickbutton taskbutton hastooltip" id="action1">Do Thing</button>
+                    <button type="button" class="clickbutton taskbutton hastooltip" id="action1">Do Thing</button>
+                </div>
             </div>
             <div class="tab-content" id="tab2-content">
                 <h1>Skills</h1>
@@ -92,6 +96,11 @@
     <div class="sidebar">
         <div class="sidebar-content">
             <h1>Blue Bananas</h1>
+            <div class="progressbar">
+                <progress id="mana" value="50" max="100"></progress>
+                <span id="mana-label" class="label label-left">12/100</span>
+                <span class="label label-right">mana</span>
+        </div>
         </div>
     </div>
 </body>

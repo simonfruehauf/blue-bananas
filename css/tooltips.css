@@ -9,7 +9,10 @@
     height: auto;
     word-wrap: break-word;
     z-index: 2;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.5em;
     border-radius: 1em;
     position: absolute;
     top: 50%;
@@ -23,10 +26,17 @@
 
 }
 .tooltip > p{
-    font-size: 13px;
+    margin: 0;
+    padding: 0;
 }
 .tooltip-req{
     font-style: italic;
+}
+
+.tooltip hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--secondary), var(--main), var(--secondary));
 }
 
 
