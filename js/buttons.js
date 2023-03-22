@@ -16,9 +16,8 @@ function buttonClicked(evt, buttonid) {
     }
 
     //task
-
     //TODO should check list? of tasks, remove first, add current
-    else if(b.classList.contains("task")){
+    if(b.classList.contains("task")){
         
         for (let i = 0; i < buttons.length; i++) {
            if ( buttons[i].classList.contains("task")) {
@@ -27,8 +26,11 @@ function buttonClicked(evt, buttonid) {
         }
         document.getElementById(buttonid).classList.add("currenttask");
     }
-    else if (b.id = "savebutton"){
-        save(data);
+    if (b.id == "savebutton"){
+        saveGame(data);
+    }
+    if (b.id == "clearbutton"){
+        clearGame();
     }
 }
 

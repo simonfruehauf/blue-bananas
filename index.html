@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Blue Banana</title>
     <link rel="stylesheet" type="text/css" href="css/var.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tooltips.css">
@@ -48,7 +48,7 @@
                     <div class="perk hastooltip" id="perk1">
                         <div class="icon-wrapper">
                             <img class="icon" src="icons/perk1.png">
-                        </div> 
+                        </div>
                     </div>
                     <div class="perk hastooltip locked" id="perk2">
 
@@ -75,10 +75,11 @@
                 <form class="row">
                     <label class="radio-container hastooltip" id="autosavetooltip">
                         <input id="autosavebox" type="checkbox" name="autosave" value="1" />
-                        <span>Autosave</span> 
+                        <span>Autosave</span>
                     </label>
 
-                    <button type="button" class="clickbutton" id="savebutton">Do Thing</button>
+                    <button type="button" class="clickbutton" id="savebutton">Save</button>
+                    <button type="button" class="clickbutton" id="clearbutton">Clear Save</button>
 
                 </form>
 
@@ -113,7 +114,17 @@
                 <progress id="mana" value="50" max="100"></progress>
                 <span id="mana-label" class="label label-left">12/100</span>
                 <span class="label label-right">mana</span>
-        </div>
+            </div>
+            <div class="progressbar">
+                <progress id="stamina" value="50" max="100"></progress>
+                <span id="stamina-label" class="label label-left">12/100</span>
+                <span class="label label-right">stamina</span>
+            </div>
+            <div class="progressbar">
+                <progress id="health" value="50" max="100"></progress>
+                <span id="health-label" class="label label-left">12/100</span>
+                <span class="label label-right">health</span>
+            </div>
         </div>
     </div>
 </body>
@@ -125,7 +136,6 @@
     <script src="js/tooltips.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/buttons.js"></script>
-
     <script src="js/savegame.js"></script>
 
 </footer>

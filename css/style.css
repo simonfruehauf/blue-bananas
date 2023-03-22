@@ -224,3 +224,9 @@ progress::-webkit-progress-value {
 #mana::-webkit-progress-value{
     background-color: var(--mana);
 }
+#stamina::-webkit-progress-value{
+    background-color: var(--stamina);
+}
+#health::-webkit-progress-value{
+    background-color: var(--health);
+}
