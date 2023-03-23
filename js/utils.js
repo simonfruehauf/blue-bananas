@@ -5,4 +5,4 @@ Number.prototype.clamp = function(min, max) {
   };
 
 
-  // TODO y / n popup
+  // TODO info / log thing at bottom right of screen or in sidebar
