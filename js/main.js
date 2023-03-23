@@ -37,6 +37,8 @@ function setStatMax(stat, val) {
 function unlockStat(stat, b = true) {
     data.stats[stat].unl = b;
 }
+
+
 //testing
 let test = setInterval(function () {
     setStatMax("mana", Math.round((Math.random() * 20)+20));

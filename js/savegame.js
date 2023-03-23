@@ -7,17 +7,17 @@ var og_data = {
         stamina:{
             val: 10,
             max: 25,
-            unl: false
+            unl: true
         },
         mana:{
             val: 1,
             max: 20,
-            unl: true
+            unl: false
         },
         health:{
             val: 1,
             max: 20,
-            unl: true
+            unl: false
         }
     }
 
@@ -26,11 +26,38 @@ var og_data = {
 var autosavebox = document.getElementById("autosavebox");
 var savebutton = document.getElementById("savebutton");
 
+// function to show and hide bars
+function toggleBar(id, visible = -1) {
+    var bar = document.getElementById(id);
+    bar = bar.parentElement;
+    if(visible === -1){
+        switch (bar.style.display) {
+            case "block":
+            case "":
+                bar.style.display = "none";
+                break;
+            case "inherit":
+            default:
+                bar.style.display = "block";
+
+                break;
+        }
+    }
+    else {  
+        if (visible) {
+            bar.style.display = "block";
+        }
+        else {
+            bar.style.display = "none";
+        }
+    }
+}
+
 // save the game
 function saveGame(d) {
     //data 
     
-    data.autosave = autosavebox.checked;
+    d.autosave = autosavebox.checked;
     
     localStorage.setItem('savegame', JSON.stringify(d));
     console.log("Game saved to local storage.");
@@ -58,7 +85,7 @@ if (localStorage.getItem('savegame') != null && localStorage.getItem('savegame')
 }
 else {
     localStorage.clear();
-    console.log("Savegame empty or corrupted. Clearing." + data);
+    console.log("Savegame empty or corrupted. Clearing.");
     console.log(localStorage.getItem('savegame'));
     saveGame(og_data);
     console.log(localStorage.getItem('savegame'));
@@ -74,17 +101,7 @@ let autosave = setInterval(function () {
 
 //load and set bars
 for (const [key, value] of Object.entries(data.stats)) {
+    // show and hide things
+    toggleBar(key, data.stats[key].unl);
     setBar(key, data.stats[key].val, data.stats[key].max);
-}
-
-
-//TODO
-function toggleBar(id, visible = -1) {
-    var bar = document.getElementById(id);
-    if(visible = -1){
-        
-    }
-    else {  
-
-    }
 }
