@@ -101,8 +101,27 @@
                         <input class="theme-button" type="radio" name="theme" value="4" />
                         <span>Other</span>
                     </label>
+                    <label class="radio-container">
+                        <input class="theme-button" type="radio" name="theme" value="custom" id="customthemeradio" />
+                        <span>Custom</span>
+                    </label>
+                </form>
+                <div id="customthemebox"> 
+                <h3>Custom Theme</h3>
+                <form class="flex" >
+                    <label class="flex" for="cmain">Main Color:</label>
+                    <input type="text" id="cmain" name="main" placeholder="#FEBBCC" oninput="clickform('change')" onBlur="clickform('outside')">
+                    <label class="flex" for="csecondary">Secondary Color:</label>
+                    <input type="text" id="csecondary" name="secondary" placeholder="#FFCCCC" oninput="clickform('change')" onBlur="clickform('outside')">
+                    <label class="flex" for="csecondary">Accent Color 1:</label>
+                    <input type="text" id="caccent-1" name="accent-1" placeholder="#FFDDCC" oninput="clickform('change')" onBlur="clickform('outside')">
+                    <label class="flex" for="csecondary">Accent Color 2:</label>                   
+                    <input type="text" id="caccent-2" name="accent-2" placeholder="#FFEECC" oninput="clickform('change')" onBlur="clickform('outside')">
+                    <label class="flex" for="csecondary">Font Color:</label>
+                    <input type="text" id="cfont" name="font" placeholder="#000000" oninput="clickform('change')" onBlur="clickform('outside')">
 
                 </form>
+                </div>
             </div>
         </div>
 
@@ -133,7 +152,7 @@
 <footer>
 
     <script src="js/utils.js"></script>
-    <script src="js/tabs.js"></script>
+    <script src="js/hide.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tooltips.js"></script>
     <script src="js/theme.js"></script>

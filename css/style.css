@@ -275,3 +275,11 @@ progress::-webkit-progress-value {
     background-color: var(--secondary);
     transition: background-color 0.3s;
 }
+
+label,input{
+    display: block;
+    text-align: left;
+}
+.flex{
+    flex-direction: column;
+}

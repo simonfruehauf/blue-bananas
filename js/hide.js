@@ -32,3 +32,17 @@ function openTab(evt, tabName) {
 
 
 
+const box = document.getElementById('customthemebox');
+
+function handleRadioClick() {
+  if (document.getElementById('customthemeradio').checked) {
+    box.style.display = 'block';
+  } else {
+    box.style.display = 'none';
+  }
+}
+
+const radioButtons = document.querySelectorAll('input[name="theme"]');
+radioButtons.forEach(radio => {
+  radio.addEventListener('click', handleRadioClick);
+});
