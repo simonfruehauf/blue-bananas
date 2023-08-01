@@ -6,8 +6,9 @@ var csecondary =  document.getElementById('csecondary');
 var caccent1 =  document.getElementById('caccent-1');
 var caccent2 =  document.getElementById('caccent-2');
 var cfont =  document.getElementById('cfont');
-
 // add onclick event to all tabs
+
+
 for (let i = 0; i < themebuttons.length; i++) {
     themebuttons[i].onclick = function(event) {
         reflectPreference();
@@ -27,7 +28,6 @@ for (var i = 0; i < radios.length; i++) {
         break;
     }
 }
-
 
 const reflectPreference = () => {
     var selectedValue;
@@ -70,3 +70,9 @@ function clickform(x) {
     }
   }
 reflectPreference();
+
+
+setTimeout(function(){
+    const styleSheet = document.styleSheets[0];
+    styleSheet.insertRule('* {transition: background-color 1s}', styleSheet.cssRules.length);    
+}, 150)

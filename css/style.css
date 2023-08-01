@@ -5,7 +5,7 @@
     color: var(--font-color);
     box-sizing: inherit;
     font-family: var(--main-font);
-    transition: background-color 1s;
+    
 }
 
 html {

@@ -9,9 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/tooltips.css">
     <link rel="stylesheet" type="text/css" href="css/test.css">
-
 </head>
-
 <body>
     <div class="main">
         <div class="tab-buttons">
@@ -26,7 +24,7 @@
                 <h1>Magic</h1>
                 <h2>Action</h2>
                 <div class="row">
-                    <button type="button" class="action clickbutton hastooltip" id="action1">Do Thing</button>
+                    <button type="button" class="action clickbutton hastooltip" id="action1">Toggle Juice</button>
                     <button type="button" class="action clickbutton hastooltip" id="action2">Do Thing</button>
                     <button type="button" class="action clickbutton hastooltip" id="action3">Do Thing</button>
                 </div>
@@ -130,6 +128,11 @@
         <div class="sidebar-content">
             <h1>Blue Bananas</h1>
             <div class="progressbar">
+                <progress id="juice" value="50" max="100"></progress>
+                <span id="juice-label" class="label label-left">12/100</span>
+                <span class="label label-right">juice</span>
+            </div>
+            <div class="progressbar">
                 <progress id="mana" value="50" max="100"></progress>
                 <span id="mana-label" class="label label-left">12/100</span>
                 <span class="label label-right">mana</span>
@@ -150,7 +153,6 @@
 
 </body>
 <footer>
-
     <script src="js/utils.js"></script>
     <script src="js/hide.js"></script>
     <script src="js/main.js"></script>
@@ -158,7 +160,6 @@
     <script src="js/theme.js"></script>
     <script src="js/buttons.js"></script>
     <script src="js/savegame.js"></script>
-
 </footer>
 
 </html>

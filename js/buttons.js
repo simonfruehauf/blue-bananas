@@ -6,13 +6,15 @@ for (let i = 0; i < buttons.length; i++) {
         buttonClicked(event, buttons[i].id);
     }
 }
-
 // Button Click logic
 function buttonClicked(evt, buttonid) {
     var b = document.getElementById(buttonid);
     //action
     //TODO somehow get list of possible actions and get code from there
     if (b.classList.contains("action")) {
+        if (b.id == "action1"){
+            toggleBar("juice");
+        }
     }
 
     //task
